@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -20,20 +23,22 @@
             <Tooltip text="关闭窗体" textOverrun="CLIP" />
          </tooltip>
       </Label>
-      <AnchorPane layoutX="31.0" layoutY="184.0" prefHeight="95.0" prefWidth="287.0">
+      <AnchorPane layoutX="31.0" layoutY="184.0" prefHeight="87.0" prefWidth="287.0">
          <children>
-            <VBox prefHeight="95.0" prefWidth="287.0">
+            <VBox prefHeight="88.0" prefWidth="287.0">
                <children>
                   <HBox prefHeight="45.0" prefWidth="287.0">
                      <children>
-                        <ComboBox prefHeight="47.0" prefWidth="98.0" />
+                        <ComboBox prefHeight="43.0" prefWidth="97.0" />
                         <TextField prefHeight="43.0" prefWidth="192.0" />
                      </children>
                   </HBox>
-                  <TextField prefHeight="50.0" prefWidth="287.0" />
+                  <PasswordField prefHeight="39.0" prefWidth="287.0" />
                </children>
             </VBox>
          </children>
       </AnchorPane>
+      <CheckBox layoutX="31.0" layoutY="289.0" mnemonicParsing="false" text="自动登录" />
+      <Button layoutX="31.0" layoutY="325.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="287.0" text="登录" />
    </children>
 </AnchorPane>
