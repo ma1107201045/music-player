@@ -10,7 +10,8 @@ public class AppMain extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("com\\lingyi\\controller\\login.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("\\com\\lingyi\\controller\\login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/lingyi/controller/login.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
