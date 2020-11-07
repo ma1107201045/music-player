@@ -1,9 +1,12 @@
 package com.lingyi.controller;
 
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -45,5 +48,27 @@ public class LoginController implements Initializable {
         stage.setY(mouseEvent.getScreenY() - this.offsetY);
     }
 
+    /**
+     * 设置关闭标签的文本颜色
+     *
+     * @param mouseEvent 鼠标事件
+     */
+    public void setTextFill(MouseEvent mouseEvent) {
+        Label label = (Label) mouseEvent.getSource();
+        EventType<? extends MouseEvent> eventType = mouseEvent.getEventType();
+        String name = eventType.getName();
+        if ("MOUSE_MOVED".equals(name)) {
+            label.setTextFill(Paint.valueOf("#787878"));
+        } else if ("MOUSE_EXITED".equals(name)) {
+            label.setTextFill(Paint.valueOf("#a3a3a3"));
+        }
+    }
+
+    /**
+     * 关闭舞台
+     */
+    public void close() {
+        stage.close();
+    }
 
 }

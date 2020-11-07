@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane fx:id="anchorPane" onMouseDragged="#setStageCoordinates" onMousePressed="#setCurrentCoordinates"
-            prefHeight="536.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lingyi.controller.LoginController">
-
+<AnchorPane fx:id="anchorPane" onMouseDragged="#setStageCoordinates" onMousePressed="#setCurrentCoordinates" prefHeight="536.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lingyi.controller.LoginController">
+   <children>
+      <Label alignment="CENTER" ellipsisString="" layoutX="315.0" layoutY="6.0" onMouseClicked="#close" onMouseExited="#setTextFill" onMouseMoved="#setTextFill" prefHeight="25.0" prefWidth="25.0" text="Ⅹ" textFill="#a3a3a3" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
 </AnchorPane>
